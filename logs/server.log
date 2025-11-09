@@ -1,0 +1,19 @@
+
+> vibe-generated-app@1.0.0 dev
+> vite
+
+
+  VITE v5.4.20  ready in 264 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.20.18.89:3000/
+Error: The following dependencies are imported but could not be resolved:
+
+  react-leaflet (imported by /home/workspace/src/components/AQIMapAndCard.jsx)
+  leaflet/dist/leaflet.css (imported by /home/workspace/src/components/AQIMapAndCard.jsx)
+
+Are they installed?
+    at file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:50669:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:50174:26
+11:01:45 AM [vite] Pre-transform error: Failed to resolve import "react-leaflet" from "src/components/AQIMapAndCard.jsx". Does the file exist?
