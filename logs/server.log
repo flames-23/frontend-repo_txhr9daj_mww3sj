@@ -3,17 +3,27 @@
 > vite
 
 
-  VITE v5.4.20  ready in 264 ms
+  VITE v5.4.20  ready in 297 ms
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.20.18.89:3000/
-Error: The following dependencies are imported but could not be resolved:
-
-  react-leaflet (imported by /home/workspace/src/components/AQIMapAndCard.jsx)
-  leaflet/dist/leaflet.css (imported by /home/workspace/src/components/AQIMapAndCard.jsx)
-
-Are they installed?
-    at file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:50669:15
-    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at async file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:50174:26
-11:01:45 AM [vite] Pre-transform error: Failed to resolve import "react-leaflet" from "src/components/AQIMapAndCard.jsx". Does the file exist?
+11:04:38 AM [vite] Pre-transform error: Failed to resolve import "react-leaflet" from "src/components/AQIMapAndCard.jsx". Does the file exist?
+11:04:39 AM [vite] Internal server error: Failed to resolve import "react-leaflet" from "src/components/AQIMapAndCard.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/workspace/src/components/AQIMapAndCard.jsx:2:55
+  1  |  import { jsxDEV } from "react/jsx-dev-runtime";
+  2  |  import { useEffect, useMemo, useState } from "react";
+  3  |  import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+     |                                                          ^
+  4  |  import "leaflet/dist/leaflet.css";
+  5  |  function aqiCategory(aqi) {
+      at TransformPluginContext._formatError (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41)
+      at TransformPluginContext.error (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16)
+      at normalizeUrl (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64306:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64438:39
+      at async Promise.all (index 2)
+      at async TransformPluginContext.transform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64365:7)
+      at async PluginContainer.transform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
+      at async loadAndTransform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27)
+      at async viteTransformMiddleware (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:62105:24)
